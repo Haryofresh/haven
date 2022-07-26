@@ -1,0 +1,47 @@
+$myFont: Helvetica, sans-serif;
+$navLinkFontSize: 1em;
+$secondaryFontSize: 1.1em;
+$primaryColor: #3FA9F5;
+$borderColor: #839bb165;
+$borderColorless: #ffffff;
+$headerHeight: 110px;
+
+body {
+    font-family: $myFont;
+}
+
+nav {
+    height: $headerHeight;
+    .catBtn {
+        height: 45px;
+        border: none;
+    }
+    .catBtn:hover {
+        border: none;
+    }
+    form button:first-child {
+        font-size: $secondaryFontSize;
+    }
+    input:focus { 
+        box-shadow: none !important; 
+    }
+    .searchBtn {
+        background-color: $primaryColor;
+    }
+    .vl {
+        height: 30px;
+        border-left: 1px solid $borderColor;
+    }
+    .btnGroup > li > a {
+        font-size: $navLinkFontSize;
+        font-weight: 500;
+        border: 1px solid $borderColorless !important;
+        letter-spacing: 1px;
+    }
+    .btnGroup > li > a:hover {
+        border: 1px solid $borderColor !important;
+    }
+    .btnGroup > button {
+        border: 1px solid $borderColor;
+    }
+}
